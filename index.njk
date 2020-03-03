@@ -1,0 +1,16 @@
+---
+layout: "layouts/journalbase.njk"
+pagination:
+  data: collections.post
+  size: 100
+  reverse: true
+  alias: posts
+---
+
+<h2>Journal Entries</h2>
+
+{% for post in posts %}
+<p>
+<a href="/journal{{ post.url | url }}">{{ post.data.title }}</a>
+</p>
+{% endfor %}

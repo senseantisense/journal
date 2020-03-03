@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'/>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+<meta name="description" content="maxCohen's journal with fun for the whole family.">
+<link rel="stylesheet" href="/journal/assets/css/normalize.css" media="screen" />
+<link rel="stylesheet" href="/journal/assets/css/journal.css" media="screen" />
+<link href="https://micro.blog/maxcohen" rel="me" />
+<title>{{ title }}</title>
+</head>
+<body>
+
+  <header class="journal-heading-container">
+    <section>
+      <div><h1 class="logo"><a href="/journal/">oh poopy! - a maxCohen journal</a></h1></div>
+      <nav>
+        <p>
+          <a href="/journal/">home</a> |
+          <a href="/journal/archive/">archive</a> |
+          <a href="/about/">about</a> |
+          <a href="/">senseantisense home</a>
+        </p>
+      </nav>
+    </section>
+  </header>
+
+
+<div class="journal-grid">
+
+<section class="journal-container">
+{% block content %}
+<article>
+<h2>{{ title }}</h2>
+{{ content | safe }}
+</article>
+{% endblock content %}
+</section>
+
+{% include "aside.html" %}
+
+</div>
+
+
+<!-- from here down will be in the footer -->
+<footer class="footer-container">
+  <p>&copy; 1996-2020 maxCohen - <a href="mailto:maxcohen@senseantisense.com" rel="me">maxcohen@senseantisense.com</a><br />
+  <!-- Pattern background from <a href="https://www.toptal.com/designers/subtlepatterns/">Toptal</a>.--></p>
+
+  <!-- Created by Keith Packard -->
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" x="0" y="0" width="140" height="140" id="glider">
+
+  <g transform="translate(10,10)">&gt;
+      <g id="scale" transform="scale(20,20)">
+      	<g id="grid" style="fill:none;stroke-linejoin:round;stroke-linecap:butt;stroke:#666;stroke-width:.1;">
+      	   	<!-- outside -->
+      		<path d="m 0 0 L 6 0 L 6 6 L 0 6 Z"/>
+
+      		<!-- inside -->
+      		<path d="M 0 2 L 6 2"/>
+      		<path d="M 0 4 L 6 4"/>
+
+      		<path d="M 2 0 L 2 6"/>
+      		<path d="M 4 0 L 4 6"/>
+      	</g>
+      	<g id="dots" style="fill:#000">
+      		<ellipse cx="3" cy="1" rx=".7" ry=".7" id="C1"/>
+      		<ellipse cx="5" cy="3" rx=".7" ry=".7" id="C1"/>
+      		<ellipse cx="1" cy="5" rx=".7" ry=".7" id="C1"/>
+      		<ellipse cx="3" cy="5" rx=".7" ry=".7" id="C1"/>
+      		<ellipse cx="5" cy="5" rx=".7" ry=".7" id="C1"/>
+      	</g>
+    </g>
+  </g>
+  </svg>
+</footer>
+
+
+</body>
+</html>
+
