@@ -1,5 +1,5 @@
 module.exports = function(eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("assets/");
+  eleventyConfig.addPassthroughCopy("_assets/");
   eleventyConfig.addPassthroughCopy("**/*.jpg");
   eleventyConfig.addPassthroughCopy("2017/");
   eleventyConfig.addPassthroughCopy("2018/");
