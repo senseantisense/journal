@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+/* grayscale for whole page
+-moz-filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    filter: gray; /* IE6-9 */
+/*    filter: grayscale(100%);
+*/
+/* Universal Settings */
+* {background-color: #faf7f5; color: #1f2020; box-sizing: border-box; font-family: 'Noto Sans', serif; font-size: 100%; margin: 0; padding: 0;
+}
+h1 {}
+h2 {}
+p {line-height: 1.5em; padding-bottom: 1em;}
+a:link {color: blue;}
+a:visited {color: #dc2828;}
+a:active {color: #dc2828;}
+a:hover {}
+ul {padding-top: 1em;}
+li {list-style: none; margin: 0 0 2em 0}
+	li:last-child {margin: 0 0 1em 0}
+img, embed, object, video, iframe {border: none; max-width: 100%;}
+
+
+/* Header */
+.logo {font-size: 3em;}
+	.logo a {color: #f9748b; font-family: 'Archivo Black'; text-decoration: none;}
+	.logo a:hover {font-size: 1em;}
+.subtitle {margin-left: 2%;}
+.nav-container {margin: 5% 2% 7% 2%;}
+	.home {padding-bottom: .75em;}
+	.senseantisense-home {padding-bottom: .75em;}
+	.archive {padding-bottom: .75em;}
+
+
+/* Journal Pages */
+.body-container {width: 100%;}
+.journal-content {font-size: 1.1em; padding: 2em .5em;}
+.journal-heading {color: #000; font-size: 2em; line-height: 1em; padding: .3em .3em .3em 0;}
+.journal-date {color: #444; display: block; font-weight: bold; padding-bottom: 1em;}
+
+
+/* Footer */
+.footer-container {margin-top: 10%; margin-left: 3%;}
+	.footer-container p {padding-bottom: 1em;}
+	.footer-container-highlight {background-color: yellow; margin-left: -.1%;}
+
+
+/** Media Queries (large screens) **/
+@media only screen and (min-width: 80em) {
+* {margin-left: 1%;}
+.logo {font-size: 5em; margin-top: -.35em;}
+.subtitle {font-size: .75em;}
+.nav-container {font-size: .8em; margin: 0 0 5% 1%;}
+.journal-heading {font-size: 3em; font-weight: 100;}
+.footer-container {font-size: .8em;}
+}
+
+@media only screen and (min-width: 60em) {
+.body-container {width: 75%;}
+.journal-content {width: 60%;}
+.footer-container {margin-top: 5%;}
+	.footer-container p {width: 50%;}
+}
