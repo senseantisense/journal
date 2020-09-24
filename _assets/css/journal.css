@@ -30,8 +30,8 @@ img {padding-top: 2em;}
 
 
 /* Journal Pages */
-.journal-grid {margin: 2em 0 0 0;}
-.journal-container {}
+.journal-grid {margin: 2em .75em 0 .75em;}
+.journal-container  {}
 .journal-container article {margin-bottom: 3.052em; padding: .5em;}
 .journal-aside {border-left: 0; margin-top: 2em; padding: .5em;}
 
