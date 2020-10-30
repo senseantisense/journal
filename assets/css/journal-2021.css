@@ -17,7 +17,9 @@ a:visited {color: #000;}
 a:active {color: #000;}
 a:hover {}
 ol li {list-style: decimal; margin: .5em 0 .5em .5em;}
-li {font-size: .9em; line-height: 1.6; list-style: none; margin: 1em 0 0 0;}
+ul {list-style: none;}
+ul li {line-height: 1.6; margin: 1em 0 0 0;}
+ul li::before {color: #ccc; content: "\1F836";}
 strong {font-weight: 700;}
 em {font-weight: 400i;}
 img, embed, object, video, iframe {border: none; max-width: 100%;}
