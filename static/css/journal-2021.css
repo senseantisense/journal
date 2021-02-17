@@ -1,54 +1,63 @@
 /* CSS 2021 */
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 /* Universal Settings */
 @viewport {width: device-width;}
-/* @font-face {font-family: 'AlteHaasGroteskRegular'; src: url('/assets/fonts/AlteHaasGroteskRegular.ttf') format('truetype');}
-@font-face {font-family: 'AlteHaasGroteskBold'; src: url('/assets/fonts/AlteHaasGroteskBold.ttf') format('truetype');} */
-:root {font-size: 1.2rem;}
-/* background-image: url("image.png"); background-repeat: repeat; color: #000;  */
-html {background-color: #fff; font-family: 'Source Sans Pro', sans-serif; margin: 2em 1em 1em 1em; max-width: 30rem; padding: 0;}
-h1 {font-size: 1.75em;}
-h2 {font-size: 1.4em; font-weight: 700; margin: 1.4em 0 .5em 0;}
-p {line-height: 1.6; margin: .5em 0;}
+:root {font-size: 1rem;}
+html {background-color: #fff; box-sizing: border-box; color: #000; font-family: 'Open Sans', verdana, sans-serif; font-weight: 400; margin: 2em 1em 1em 1em; max-width: 30rem; padding: 0;}
+h1 {font-size: 1.75em; font-weight: 400; margin: 0 0 1em 0;}
+h2 {clear: both; font-size: 1.4em; font-weight: 700; margin: 1.4em 0 .5em 0;}
+h3 {clear: both; font-size: 1em; font-weight: 700; margin: 1.4em 0 .5em 0;}
+p {line-height: 1.8; margin: 0 0 1em 0;}
 a:link {color: #000;}
-a:visited {color: #000;}
+a:visited {color: #000; font-weight: normal;}
 a:active {color: #000;}
-a:hover {}
-ol li {list-style: decimal; margin: .5em 0 .5em .5em;}
-ul {list-style: none;}
-ul li {line-height: 1.6; margin: 1em 0 0 0;}
-ul li::before {color: #ccc; content: "\1F836";}
+li {line-height: 1.8; list-style: none; margin: 0 0 1em 0;}
 strong {font-weight: 700;}
 em {font-weight: 400i;}
 img, embed, object, video, iframe {border: none; max-width: 100%;}
-img {padding-top: 2em;}
 
 
 /* Header */
-.journal-heading-container {display: grid; grid-row-gap: 2em;}
-  .logo {font-size: 1.5em;}
-    .logo a {color: #000; text-decoration: none;}
-  .subtitle {padding: 0 0 1em 1em;}
-  nav {}
+.heading-container {display: flex; margin-top: .5em;}
+	.header-content {display: flex; flex-direction: column;}
+		.header-content a {color: #000; font-weight: normal;}
+		.logo-container {display: flex;}
+			.logo-container a {text-decoration: none;}
+			.logo-symbol {width: 50%; height: 50%;}
+			.logo {font-size: 1.5em; margin: 1em 0 0 0;}
+		.nav-container {display: flex; flex-direction: column; font-size: .9em; justify-content: space-between; margin: 1em 0 0 0;}
+			.menu {display: inline-block;}
+			.menu ul {display: inline-block; width: 100%;}
+			.menu li {display: block; float: left; margin: 0 2em 0 0;}
+			.menu a {display: block;}
 
 
-/* Journal Pages */
-.journal-grid {margin-top: 2em;}
-.journal-container  {}
-.journal-container article {margin-bottom: 3.052em;}
-.journal-aside {border-left: 0; margin-top: 2em; padding: .5em;}
+/* Home Page */
+.home-container {display: flex; margin: 0 0 2em 0;}
+	.home-content {display: flex; flex-direction: column;}
+
+
+/* Content Pages */
+.body-container {display: flex; margin: 0em 0 2em 0;}
+	iframe {margin-bottom: 2em;}
+	.body-content {display: flex; flex-direction: column;}
+	.datePosted {font-size: .8em; margin: 0 0 2em 0;}
+	.instructions {font-size: .8em;}
+	.large-name-make-smaller {font-size: 3.7em;}
 
 
 /* Footer */
-.footer-container {border-top: 5px solid #000; display: grid; margin: 2em 0 4em 0;}
+.footer-container {display: flex; justify-content: center; margin: 4em .3em 2em .3em;}
+	.footer-content {border-top: 1px #ccc solid; display: flex; flex-direction: column; padding-top: 1em; width: 30em;}
+	.footer-content p {font-size: .7em;}
 
 
 /** Media Queries (large screens) **/
 @media only screen and (min-width: 40em) {
 html {margin: 4em 2em 2em 4em;}
-
-/* Journal Pages */
-.journal-container article {margin-bottom: 6.104em;}
+	.large-name-make-smaller {font-size: 4em;}
 }
+.home-container {margin: 3em 0 2em 0;}
+.body-container {margin: 4.25em 0 2em 0;}
