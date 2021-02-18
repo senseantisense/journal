@@ -37,6 +37,7 @@ img, embed, object, video, iframe {border: none; max-width: 100%;}
 /* Home Page */
 .home-container {display: flex; margin: 0 0 2em 0;}
 	.home-content {display: flex; flex-direction: column;}
+.h-entry {margin-bottom: 2em;}
 
 
 /* Content Pages */
