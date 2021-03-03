@@ -34,12 +34,6 @@ img, embed, object, video, iframe {border: none; max-width: 100%;}
 			.menu a {display: block;}
 
 
-/* Home Page */
-.home-container {display: flex; margin: 0 0 2em 0;}
-	.home-content {display: flex; flex-direction: column;}
-.h-entry {margin-bottom: 2em;}
-
-
 /* Content Pages */
 .body-container {display: flex; margin: 0em 0 2em 0;}
 	iframe {margin-bottom: 2em;}
@@ -60,5 +54,4 @@ img, embed, object, video, iframe {border: none; max-width: 100%;}
 html {margin: 4em 2em 2em 4em;}
 	.large-name-make-smaller {font-size: 4em;}
 }
-.home-container {margin: 3em 0 2em 0;}
 .body-container {margin: 4.25em 0 2em 0;}
