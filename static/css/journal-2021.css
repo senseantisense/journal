@@ -27,6 +27,7 @@ img, embed, object, video, iframe {border: none; max-width: 100%;}
 			.logo-container a {text-decoration: none;}
 			.logo-symbol {width: 50%; height: 50%;}
 			.logo {font-size: 1.5em; margin: 1em 0 0 0;}
+		.slogan {margin-top: 1em;}
 		.nav-container {display: flex; flex-direction: column; font-size: .9em; justify-content: space-between; margin: 1em 0 0 0;}
 			.menu {display: inline-block;}
 			.menu ul {display: inline-block; width: 100%;}
