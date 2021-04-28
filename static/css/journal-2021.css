@@ -5,7 +5,7 @@
 /* Universal Settings */
 @viewport {width: device-width;}
 :root {font-size: 1rem;}
-html {background-color: #fff; box-sizing: border-box; color: #000; font-family: 'Open Sans', verdana, sans-serif; font-weight: 400; margin: 2em 1em 1em 1em; max-width: 30rem; padding: 0;}
+html {background-color: #fff; box-sizing: border-box; color: #000; font-family: 'Open Sans', verdana, sans-serif; font-weight: 400; margin: 0 auto; max-width: 30rem; padding: 0;}
 h1 {font-size: 1.75em; font-weight: 400; margin: 0 0 .5em 0;}
 h2 {clear: both; font-size: 1.4em; font-weight: 700; margin: 1.4em 0 .5em 0;}
 h3 {clear: both; font-size: 1em; font-weight: 700; margin: 1.4em 0 .5em 0;}
@@ -52,7 +52,6 @@ img, embed, object, video, iframe {border: none; max-width: 100%;}
 
 /** Media Queries (large screens) **/
 @media only screen and (min-width: 40em) {
-html {margin: 4em 2em 2em 4em;}
-	.large-name-make-smaller {font-size: 4em;}
+.large-name-make-smaller {font-size: 4em;}
 }
 .body-container {margin: 4.25em 0 2em 0;}
