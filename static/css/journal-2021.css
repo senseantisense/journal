@@ -46,7 +46,7 @@ img, embed, object, video, iframe {border: none; max-width: 100%;}
 
 /* Footer */
 .footer-container {display: flex; justify-content: center; margin: 4em .3em 2em .3em;}
-	.footer-content {border-top: 1px #ccc solid; display: flex; flex-direction: column; padding-top: 1em; width: 30em;}
+	.footer-content {border-top: 1px #ccc solid; display: flex; flex-direction: column; padding-top: 1em; width: 40em;}
 	.footer-content p {font-size: .7em;}
 
 
