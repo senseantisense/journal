@@ -22,7 +22,7 @@ img, embed, object, video, iframe {border: none; max-width: 100%;}
 /* Header */
 .heading-container {display: flex; margin-top: .5em;}
 	.header-content {display: flex; flex-direction: column;}
-		.sr-only-skip-navigation {clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); height: 1px; margin: -1px; width: 1px; overflow: hidden; padding: 0; position: absolute;}
+		.sr-skip-to-main-content {clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); height: 1px; margin: -1px; width: 1px; overflow: hidden; padding: 0; position: absolute;}
 		.header-content a {color: #000; font-weight: normal;}
 		.logo-container {display: flex;}
 			.logo-container a {text-decoration: none;}
